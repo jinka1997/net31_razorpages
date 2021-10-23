@@ -20,6 +20,7 @@ namespace SampleWeb
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHealthChecks();
             services.AddRazorPages();
 
             services.AddDbContext<SampleWebContext>(options =>
@@ -46,6 +47,7 @@ namespace SampleWeb
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHealthChecks("/health");
                 endpoints.MapRazorPages();
             });
         }
