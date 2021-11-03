@@ -348,3 +348,9 @@ dotnet-tools.json
 /src/summit-restapi/WebApi/Properties/serviceDependencies.WebApi20210430062843 - Web Deploy.json
 /src/summit-restapi/WebApi/Properties/serviceDependencies.json
 /src/summit-restapi/WebApi/Properties/ServiceDependencies/WebApi20210430062843 - Web Deploy/profile.arm.json
+infra/.terraform.lock.hcl
+infra/.terraform.tfstate.lock.info
+*.tfvars
+infra/terraform.tfstate.backup
+*.exe
+infra/terraform.tfstate
