@@ -5,6 +5,3 @@ locals {
     resource_name = "${local.app_name}-${local.environment}"
 }
 
-#data "aws_caller_identity" "self" { }
-
-
